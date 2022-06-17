@@ -1182,11 +1182,11 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -30, -30, -1.3 }
+#define NOZZLE_TO_PROBE_OFFSET { -25, 0, -1.3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 10
+#define PROBING_MARGIN 0
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_FEEDRATE (133*60)
@@ -1382,7 +1382,7 @@
 
 // The size of the printable area
 #define X_BED_SIZE 205
-#define Y_BED_SIZE 170
+#define Y_BED_SIZE 184
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
