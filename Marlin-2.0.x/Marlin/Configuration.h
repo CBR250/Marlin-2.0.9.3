@@ -930,7 +930,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 92.6 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 103.22, 134.64, 1600, 92.6 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1182,7 +1182,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -25, 0, -1.3 }
+#define NOZZLE_TO_PROBE_OFFSET { 10, 0, -1.3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1264,7 +1264,7 @@
 #define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
 //#define Z_AFTER_PROBING           5 // Z position after probing is done
 
-#define Z_PROBE_LOW_POINT          -2 // Farthest distance below the trigger-point to go before stopping
+#define Z_PROBE_LOW_POINT          -10 // Farthest distance below the trigger-point to go before stopping
 
 // For M851 give a range for adjusting the Z probe offset
 #define Z_PROBE_OFFSET_RANGE_MIN -20
@@ -1381,8 +1381,8 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 205
-#define Y_BED_SIZE 184
+#define X_BED_SIZE 190
+#define Y_BED_SIZE 95
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
